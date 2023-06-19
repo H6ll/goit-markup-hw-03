@@ -1,158 +1,191 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <meta name="description" content="WebStudio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&amp;family=Roboto&amp;display=swap"
+      rel="stylesheet"
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>WebStudio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container main-nav">
-        <nav class="main-nav">
-          <a href="./index.html" class="logo"><span class="logo part">Web</span>Studio</a>
-          <ul class="nav-list">
-            <li class="link"><a class="nav-list-link current" href="./index.html">Студія</a></li>
-            <li class="link"><a class="nav-list-link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="link"><a class="nav-list-link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="contacts-list">
-          <li class="contact">
-            <a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a>
-          </li>
-          <li class="contact">
-            <a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <!-- Герой -->
-      <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="btn primary">Замовити послугу</button>
-      </section>
-      <!-- Перелік рішень -->
-      <section class="section features">
-        <div class="container">
-          <h2 class="visually-hidden">Перелік рішень</h2>
-          <ul class="section-list">
-            <li class="item">
-              <h3 class="section-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="item-desc">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="item">
-              <h3 class="section-list-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="item-desc">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="item">
-              <h3 class="section-list-title">ПЛАНУВАННЯ</h3>
-              <p class="item-desc">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="item">
-              <h3 class="section-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="item-desc">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
-            </li>
-          </ul>
+    <div class="">
+      <!-- heder -->
+      <header class="header">
+        <div class="container top-bar">
+          <nav class="navigation">
+            <a href="./index.html" class="main-logo color-logo link-nav link"
+              >Web<span class="somain-title">Studio</span></a
+            >
+            <ul class="list menu-nav">
+              <li><a href="./index.html" class="link-nav link">Studio</a></li>
+              <li>
+                <a href="./portfolio.html" class="link-nav link">Portfolio</a>
+              </li>
+              <li><a href="" class="link-nav link">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="teg-addres">
+            <ul class="list menu-adress">
+              <li>
+                <a href="mailto:info@devstudio.com" class="addres-list-item link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="addres-list-item link">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
         </div>
-      </section>
-      <!-- Чим ми займаємося -->
-      <section class="section">
+      </header>
+      <!-- Main content -->
+      <main>
+        <!-- first section -->
+        <section class="first-section">
+          <div class="container">
+            <h1 class="first-section-title">
+              <span>Effective Solutions</span>
+              <span class="span-title-sec-one">for Your Business</span>
+            </h1>
+            <button type="button" class="butt"><span class="butt-text">Order Service</span></button>
+          </div>
+        </section>
+        <!-- Second section -->
+        <section class="section-two">
+          <div class="container">
+            <h2 class="visually-hidden">Features</h2>
+            <ul class="list-sec-two list">
+              <li class="item-sec-two">
+                <h3 class="list-title">Strategy</h3>
+                <p class="second-sec-p">
+                  Our goal is to identify the business problem to walk away with the perfect and
+                  creative solution.
+                </p>
+              </li>
+              <li class="item-sec-two">
+                <h3 class="list-title">Punctuality</h3>
+                <p class="second-sec-p">
+                  Bring the key message to the brand's audience for the best price within the
+                  shortest possible time.
+                </p>
+              </li>
+              <li class="item-sec-two">
+                <h3 class="list-title">Diligence</h3>
+                <p class="second-sec-p">
+                  Research and confirm brands that present the strongest digital growth
+                  opportunities and minimize risk.
+                </p>
+              </li>
+              <li class="item-sec-two">
+                <h3 class="list-title">Technologies</h3>
+                <p class="second-sec-p">
+                  Design practice focused on digital experiences. We bring forth a deep passion for
+                  problem-solving.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Third section -->
+        <section class="section-thee">
+          <div class="container">
+            <h2 class="title-sec-third">What are we doing</h2>
+            <ul class="list-sec-three list">
+              <li class="images-sec-three">
+                <img src="./images/example1.jpg" alt="example" width="360" />
+              </li>
+              <li class="images-sec-three">
+                <img src="./images/example2.jpg" alt="example" width="360" />
+              </li>
+              <li class="images-sec-three">
+                <img src="./images/example3.jpg" alt="example" width="360" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Four section -->
+        <section class="four-section">
+          <div class="container">
+            <h2 class="title-sec-four">Our Team</h2>
+            <ul class="list list-sec-four">
+              <li class="item-sec-four">
+                <img
+                  class="our-team-img"
+                  src="./images/member1.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+                <div class="name-and-profession">
+                  <h3 class="list-members">Mark Guerrero</h3>
+                  <p class="proffesion-member">Product Designer</p>
+                </div>
+              </li>
+
+              <li class="item-sec-four">
+                <img class="our-team-img" src="./images/member2.jpg" alt="Tom Ford" width="264" />
+                <div class="name-and-profession">
+                  <h3 class="list-members">Tom Ford</h3>
+                  <p class="proffesion-member">Frontend Developer</p>
+                </div>
+              </li>
+              <li class="item-sec-four">
+                <img
+                  class="our-team-img"
+                  src="./images/member3.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+                <div class="name-and-profession">
+                  <h3 class="list-members">Camila Garcia</h3>
+                  <p class="proffesion-member">Marketing</p>
+                </div>
+              </li>
+              <li class="item-sec-four">
+                <img
+                  class="our-team-img"
+                  src="./images/member4.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+                <div class="name-and-profession">
+                  <h3 class="list-members">Daniel Wilson</h3>
+                  <p class="proffesion-member">UI Designer</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- Pidval -->
+      <footer class="footer">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="section-list">
-            <li class="img-list">
-              <img src="./images/box-1.jpg" alt="Keyboard typing" width="370" />
-            </li>
-            <li class="img-list">
-              <img src="./images/box-2.jpg" alt="Smartphone look" width="370" />
-            </li>
-            <li class="img-list">
-              <img src="./images/box-3.jpg" alt="Color selection" width="370" />
-            </li>
-          </ul>
+          <a href="./index.html" class="main-logo color-logo foot-logo link"
+            >Web<span class="somain-title-footer">Studio</span></a
+          >
+          <p class="p-footer">
+            Increase the flow of customers and sales for your business with digital marketing &
+            growth solutions.
+          </p>
         </div>
-      </section>
-      <!-- Наша команда -->
-      <section class="section team">
-        <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="section-list">
-            <li class="section-card">
-              <img src="./images/igor-demianenko.jpg" alt="igor Demianenko" width="270" />
-              <div class="team-card-desc">
-                <h3 class="section-list-item">Ігор Дем'яненко</h3>
-                <p class="item-desc profession">Product Designer</p>
-              </div>
-            </li>
-            <li class="section-card">
-              <img src="./images/olga-repina.jpg" alt="Olga Repina" width="270" />
-              <div class="team-card-desc">
-                <h3 class="section-list-item">Ольга Рєпіна</h3>
-                <p class="item-desc profession">Frontend Developer</p>
-              </div>
-            </li>
-            <li class="section-card">
-              <img src="./images/mykola-tarasov.jpg" alt="Mykola Tarasov" width="270" />
-              <div class="team-card-desc">
-                <h3 class="section-list-item">Микола Тарасов</h3>
-                <p class="item-desc profession">Marketing</p>
-              </div>
-            </li>
-            <li class="section-card">
-              <img src="./images/mykhailo-yermakov.jpg" alt="Mykhailo Yermakov" width="270" />
-              <div class="team-card-desc">
-                <h3 class="section-list-item">Михайло Єрмаков</h3>
-                <p class="item-desc profession">UI Designer</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="logo foot"><span class="logo part">Web</span>Studio</a>
-        <address>
-          <ul class="footer-list">
-            <li class="item">
-              <a
-                href="https://goo.gl/maps/kWrGyEN4S8KAi9pg8"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                class="address"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

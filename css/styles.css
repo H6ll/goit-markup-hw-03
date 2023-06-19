@@ -62,7 +62,7 @@ img {
 }
 /* Налаштування контейнера */
 .container {
-  width: 1200px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -74,7 +74,7 @@ img {
 
 /* Header */
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #e7e9fc ;
 }
 
 .main-nav {
